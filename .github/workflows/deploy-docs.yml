@@ -31,8 +31,8 @@ jobs:
       - name: Generate docs
         run: pnpm run generate
 
-      # - name: Add .nojekyll
-      #   run: touch .output/public/.nojekyll
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
 
       - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v3
